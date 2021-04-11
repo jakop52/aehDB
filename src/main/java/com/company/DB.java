@@ -11,7 +11,7 @@ public class DB {
         dbpassword = "";
     }
 
-    public String getCOSTAM(String tab){
+    public String getTab(String tab){
         String costam="";
         try {
 // loading driver

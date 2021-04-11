@@ -1,7 +1,8 @@
 package com.company;
 
-import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,8 +12,9 @@ private DB db;
     public void setUp() throws Exception {
         db = new DB();
     }
-    @org.junit.jupiter.api.Test
+    @Test
+    @DisplayName("Test pobierania danych z bazy")
     void getCOSTAM() {
-        assertEquals("Jan Kowalski", db.getCOSTAM("test_aeh_students"));
+        assertEquals("Jan Kowalski", db.getTab("test_aeh_students"));
     }
 }
